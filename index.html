@@ -12,12 +12,12 @@
   <p>The Akan people of Ghana frequently name their children after the day of the week they were born.This web application generates your Akan name just from your birthday and gender! How cool is that!?</p>
   <p>Enter your birthday details in the form below to find out your <b><em>>Akan Name.</em></b></p>
   <form action="" class="input">
-    <label for="enterDay">
+    <label for="day">
       DAY:
       <input type="number" id="enterDay" name="birth-day" placeholder="DD" value="" min="1" max="31" required>
 
     </label>
-    <label for="enterMonth">
+    <label for="month">
       MONTH:
       <select name="" id="enterMonth">
         <option>January</option>
@@ -36,9 +36,14 @@
       </select>
 
     </label>
-    <label for="enterYear">
+    <label for="year">
       YEAR:
       <input type="number" id="enterYear" placeholder="YYYY" value="" required>
+
+    </label>
+    <label for="century">
+      CENTURY:
+      <input type="number" id="enterCentury" placeholder=" eg.21 for 2019" min="18" max="21">
 
     </label>
 
