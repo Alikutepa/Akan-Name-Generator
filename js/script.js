@@ -1,35 +1,38 @@
-function results(){
+function generate(){
+    var day=document.getElementById("day").value;
+    var month=document.getElementById("month").value;
     var year=document.getElementById("year").value; 
-    var month=document.getElementById("month").value; 
-    var day=document.getElementById("day").value; 
-    var male=document.getElementById("male").checked;
-    var female=document.getElementById("female").checked;
+    var birthDay = new Date(day+ '/' +month + '/' + year);
+    var specificDay = birthDay.getDay(); // getDay method returns the day of the week (from 0 to 6) for the specified date where Sunday is 0, Monday is 1
+
+    var male=document.getElementById("male").checked; 
+    var female=document.getElementById("female").checked;// the .checked is a boolean, which returns true if the checkbox is checked
+
+    // arrays for different variables 
     var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]; 
     var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]; 
     var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]; 
-    var birthDate = new Date(day+ '/' +month + '/' + year);
-    var dayOfTheWeek = birthDate.getDay(); 
 
 
 
     if (day <= 0 || day > 31) { 
-		document.getElementById("error").innerText = "Please enter a valid date!"
+		document.getElementById("error").innerHTML = "Please enter a valid date!"
     }
 
-    else if ((month <0 || month>12 )) { 
-        document.getElementById("error").innerText = "Please enter a valid date!"
+    else if (month <0 || month>12 ) { 
+        document.getElementById("error").innerHTML = "Please enter a valid month!"
     }
 
    else if ((female === false) && (male === false)) { 
-    document.getElementById("error").innerText = "Please select gender!"
+    document.getElementById("error").innerHTML = "Please select gender!"
 
  }
     else if (male === true) { 
-        document.getElementById("results").innerHTML = "You were born on a " + days[dayOfTheWeek]  + " ,and therefore, your Akan name is " + maleNames[dayOfTheWeek] + "!"
+        document.getElementById("results").innerHTML = "You were born on a " + days[specificDay]  + " ,and therefore, your Akan name is " + maleNames[specificDay] + "!"
     }
 
     else if (female === true) { 
-        document.getElementById("results").innerHTML = "You were born on a " + days[dayOfTheWeek] + " and therefore, your Akan name is " + femaleNames[dayOfTheWeek] + "!"
+        document.getElementById("results").innerHTML = "You were born on a " + days[specificDay] + " and therefore, your Akan name is " + femaleNames[specificDay] + "!" 
     }      
 
      

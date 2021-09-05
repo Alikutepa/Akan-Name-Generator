@@ -19,7 +19,7 @@
     <form action="" class="input">
       <label for="day">
         DAY:
-        <input type="number" id="day" placeholder="DD" value="" min="1" max="31" required>
+        <input type="number" id="day" placeholder="DD" value="" required>
 
       </label>
       <label for="month">
@@ -47,7 +47,7 @@
         
       </label>
       <br>
-      <input type="submit" value="FIND OUT YOUR NAME" onclick="results()">
+      <input type="submit" value="FIND OUT YOUR NAME" onclick="generate(); return false;" > <!-- return false function to delay the response on the page -->
       <p id="results"></p><!-- where akan name will be printed out -->
 
     </form>
