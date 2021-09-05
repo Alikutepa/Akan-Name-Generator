@@ -19,5 +19,5 @@ None
 ## Support and contact details
 If you run into any issue or have ideas on how to make this website better, kindly contact me through this email: jalikutepa@gmail.com}
 ### License
-This project is under the [MIT] license Copyright (c) 2021 **Juliana Alikutepa**
+This project is under the MIT license Copyright (c) 2021 **Juliana Alikutepa**
   
