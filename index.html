@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akan Name Generator</title>
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href= "index.css">
 </head>
 <body>
@@ -15,47 +15,30 @@
       <p>The Akan people of Ghana frequently name their children after the day of the week they were born.This web application generates your Akan name just from your birthday and gender! How cool is that!?</p>
       <p>Enter your birthday details in the form below to find out your <b><em>Akan Name.</em></b></p>
   </div>
+  <!-- Form to collect user date of birth -->
     <form action="" class="input">
       <label for="day">
         DAY:
-        <input type="number" id="enterDay" name="birth-day" placeholder="DD" value="" min="1" max="31" required>
+        <input type="number" id="day" placeholder="DD" value="" min="1" max="31" required>
 
       </label>
       <label for="month">
         MONTH:
-        <select name="" id="enterMonth">
-          <option>----</option>
-          <option>January</option>
-          <option>February</option>
-          <option>March</option>
-          <option>April</option>
-          <option>May</option>
-          <option>June</option>
-          <option>July</option>
-          <option>August</option>
-          <option>September</option>
-          <option>October</option>
-          <option>November</option>
-          <option>December</option>
-
-        </select>
+        <input type="number" id="month" required>
 
       </label>
       <label for="year">
         YEAR:
-        <input type="number" id="enterYear" placeholder="YYYY" value="" required>
+        <input type="number" id="year" placeholder="YYYY" value="" required>
 
-      </label>
-      <label for="century">
-        CENTURY:
-        <input type="number" id="enterCentury" value="" required min="18" max="21">
       </label>
 
       <br>
-      <p id="error"></p>
+
+      <p id="error"></p><!-- where the error message will display after form validation -->
       <br>
       <label for="gender">
-        <p>Choose your gender</p>
+        <p>Gender</p>
         MALE
         <input type="radio" name="gender" id="male"  value="male"  required> 
         <br>
@@ -64,8 +47,8 @@
         
       </label>
       <br>
-      <input type="submit" value="GET YOUR AKAN NAME" onclick="checkDayOfTheWeek()">
-      <p id="results"></p>
+      <input type="submit" value="FIND OUT YOUR NAME" onclick="results()">
+      <p id="results"></p><!-- where akan name will be printed out -->
 
     </form>
     <form action="reset">
