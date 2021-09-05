@@ -12,24 +12,30 @@
 <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
+  
     <div class="content">
-        <span style="text-align: center;"><h1>Akan Name Generator</h1></span>
-        <p>The Akan people of Ghana frequently name their children after the day of the week they were born. <br> This web application generates your Akan name just from your birthday and gender! How cool is that!?</p>
-        <p>Enter your birthday details in the form below to find out your <b><em>Akan Name.</em></b></p>
-    
-        <!-- Form to collect user date of birth -->
+      <span style="text-align: center; border-bottom-style: dashed;" ><h1>Akan Name Generator</h1></span>
+
+      <div class="text">
+          
+          <p>The Akan people of Ghana frequently name their children after the day of the week they were born. <br> This web application generates your Akan name just from your birthday and gender! How cool is that!?</p>
+          <p>Enter your birthday details in the form below to find out your <b><em>Akan Name.</em></b></p>
+      </div>
+      <div class="form">
+       <!-- Form to collect user date of birth -->
         <form action="" class="input" id="myForm">
           <label for="day">
             DAY:
             <input type="number" id="day" placeholder="DD" value="" required>
 
           </label>
+          
           <label for="month">
             MONTH:
             <input type="number" id="month" required>
 
           </label>
+          
           <label for="year">
             YEAR:
             <input type="number" id="year" placeholder="YYYY" value="" required>
@@ -41,7 +47,7 @@
           <p id="error"></p><!-- where the error message will display after form validation -->
           <br>
           <label for="gender">
-            <p>Gender</p>
+             
             MALE
             <input type="radio" name="gender" id="male"  value="male"  required> 
             <br>
@@ -57,8 +63,9 @@
         <form action="reset">
           <input type="button" value="Reset" onclick="click()">
         </form>
+      </div>
   </div>
-</div>
+
   <script src="./js/script.js"></script>
 </body>
 </html>

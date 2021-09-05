@@ -1,17 +1,38 @@
 *{
   font-family: 'Kaisei HarunoUmi', serif;
+  margin: 0;
+  padding: 0;
 }
-body {
-  background-image: url(./assets/pexels-jeffrey-czum-2501965.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
+
 .content{
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(./assets/pexels-madison-inouye-1831234.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+.text{
   border-style: none;
-  margin-top: 100px;
-  height: 70%;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 50px;
+
+}
+.form{
+  border-style: solid;
+  padding: 20px;
+  margin-right:50px ;
+  margin-left: 50px;
+}
+label{
+  font-size: 20px;
 }
 p{
   font-size: 30px;
+}
+label[for=gender]{
+ padding: 15px;
+ margin-left: 500px;
 }
