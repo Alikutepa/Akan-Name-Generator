@@ -6,7 +6,7 @@ function generate(){
     var specificDay = birthDay.getDay(); // getDay method returns the day of the week (from 0 to 6) for the specified date where Sunday is 0, Monday is 1
 
     var male=document.getElementById("male").checked; 
-    var female=document.getElementById("female").checked;// the .checked is a boolean, which returns true if the checkbox is checked
+    var female=document.getElementById("female").checked;// .checked is a boolean, which returns true if the checkbox is checked
 
     // arrays for different variables 
     var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]; 
@@ -27,6 +27,7 @@ function generate(){
     document.getElementById("error").innerHTML = "Please select gender!"
 
  }
+ // print out day defined in getDay and apply same syntax to the names
     else if (male === true) { 
         document.getElementById("results").innerHTML = "You were born on a " + days[specificDay]  + " ,and therefore, your Akan name is " + maleNames[specificDay] + "!"
     }
@@ -40,4 +41,4 @@ function generate(){
 
 }
 function click(){
-document.getElementById("reset").reset();}
+document.getElementById("myForm").reset();}

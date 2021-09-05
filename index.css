@@ -1,0 +1,17 @@
+*{
+  font-family: 'Kaisei HarunoUmi', serif;
+}
+body {
+  background-image: url(./assets/pexels-jeffrey-czum-2501965.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.content{
+  border-style: none;
+  margin-top: 100px;
+  height: 70%;
+}
+p{
+  font-size: 30px;
+}
