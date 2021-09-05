@@ -5,68 +5,73 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akan Name Generator</title>
+  <link href="css/bootstrap.css" rel ="stylesheet" type="text/css" media="all">
   <link rel="stylesheet" href= "index.css">
 </head>
 <body>
-  <h1>Akan Name Generator</h1>
-  <p>The Akan people of Ghana frequently name their children after the day of the week they were born.This web application generates your Akan name just from your birthday and gender! How cool is that!?</p>
-  <p>Enter your birthday details in the form below to find out your <b><em>Akan Name.</em></b></p>
-  <form action="" class="input">
-    <label for="day">
-      DAY:
-      <input type="number" id="enterDay" name="birth-day" placeholder="DD" value="" min="1" max="31" required>
+  <div class="container">
+    <div class="jumbotron jumbotron fluid">
+      <h1 class="h1">Akan Name Generator</h1>
+      <p>The Akan people of Ghana frequently name their children after the day of the week they were born.This web application generates your Akan name just from your birthday and gender! How cool is that!?</p>
+      <p>Enter your birthday details in the form below to find out your <b><em>Akan Name.</em></b></p>
+  </div>
+    <form action="" class="input">
+      <label for="day">
+        DAY:
+        <input type="number" id="enterDay" name="birth-day" placeholder="DD" value="" min="1" max="31" required>
 
-    </label>
-    <label for="month">
-      MONTH:
-      <select name="" id="enterMonth">
-        <option>----</option>
-        <option>January</option>
-        <option>February</option>
-        <option>March</option>
-        <option>April</option>
-        <option>May</option>
-        <option>June</option>
-        <option>July</option>
-        <option>August</option>
-        <option>September</option>
-        <option>October</option>
-        <option>November</option>
-        <option>December</option>
+      </label>
+      <label for="month">
+        MONTH:
+        <select name="" id="enterMonth">
+          <option>----</option>
+          <option>January</option>
+          <option>February</option>
+          <option>March</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>August</option>
+          <option>September</option>
+          <option>October</option>
+          <option>November</option>
+          <option>December</option>
 
-      </select>
+        </select>
 
-    </label>
-    <label for="year">
-      YEAR:
-      <input type="number" id="enterYear" placeholder="YYYY" value="" required>
+      </label>
+      <label for="year">
+        YEAR:
+        <input type="number" id="enterYear" placeholder="YYYY" value="" required>
 
-    </label>
-    <label for="century">
-      CENTURY:
-      <input type="number" id="enterCentury" value="" required min="18" max="21">
-    </label>
+      </label>
+      <label for="century">
+        CENTURY:
+        <input type="number" id="enterCentury" value="" required min="18" max="21">
+      </label>
 
-    <br>
-    <p id="error"></p>
-    <br>
-    <label for="gender">
-      <p>Choose your gender</p>
-      MALE
-      <input type="radio" name="gender" id="male"  value="male"  required> 
       <br>
-      FEMALE
-      <input type="radio" name="gender" id="female"  value="female"  required>
-      
-    </label>
-    <br>
-    <input type="submit" value="GET YOUR AKAN NAME" onclick="checkDayOfTheWeek()">
-    <p id="results"></p>
+      <p id="error"></p>
+      <br>
+      <label for="gender">
+        <p>Choose your gender</p>
+        MALE
+        <input type="radio" name="gender" id="male"  value="male"  required> 
+        <br>
+        FEMALE
+        <input type="radio" name="gender" id="female"  value="female"  required>
+        
+      </label>
+      <br>
+      <input type="submit" value="GET YOUR AKAN NAME" onclick="checkDayOfTheWeek()">
+      <p id="results"></p>
 
-  </form>
-  <form action="reset">
-    <input id="reset" type="submit" value="Reset" onclick="click()">
-  </form>
+    </form>
+    <form action="reset">
+      <input id="reset" type="submit" value="Reset" onclick="click()">
+    </form>
+</div>
   <script src="./js/script.js"></script>
 </body>
 </html>
