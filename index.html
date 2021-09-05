@@ -44,9 +44,9 @@
     </label>
     <label for="century">
       CENTURY:
-      <input type="number" id="enterCentury" placeholder=" eg.21 for 2019" min="18" max="21">
-
+      <input type="number" id="enterCentury" value="" required min="18" max="21">
     </label>
+
     <br>
     <p id="error"></p>
     <br>
@@ -60,7 +60,8 @@
       
     </label>
     <br>
-    <input type="submit" value="GET YOUR AKAN NAME" onclick="algorithim(); return false;">
+    <input type="submit" value="GET YOUR AKAN NAME" onclick="checkDayOfTheWeek()">
+    <p id="results"></p>
 
   </form>
   <form action="reset">
