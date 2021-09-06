@@ -18,13 +18,14 @@
   margin-left: 200px;
   margin-right: 200px;
   margin-bottom: 50px;
+  margin-top: 50px;
 
 }
 .form{
   border-style: solid;
   padding: 20px;
-  margin-right:50px ;
-  margin-left: 50px;
+  margin-right:200px ;
+  margin-left: 200px;
 }
 label{
   font-size: 20px;

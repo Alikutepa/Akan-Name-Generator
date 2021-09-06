@@ -1,4 +1,5 @@
 function generate(){
+    var name=document.getElementById("name").value;
     var day=document.getElementById("day").value;
     var month=document.getElementById("month").value;
     var year=document.getElementById("year").value; 
@@ -29,11 +30,11 @@ function generate(){
  }
  // print out day defined in getDay and apply same syntax to the names array
     else if (male === true) { 
-        document.getElementById("results").innerHTML = "You were born on a " + days[specificDay]  + " ,and therefore, your Akan name is " + maleNames[specificDay] + "!"
+        document.getElementById("results").innerHTML = "Hey " + name + ",You were born on a " + days[specificDay]  + ", your Akan name is " + maleNames[specificDay] + "!"
     }
 
     else if (female === true) { 
-        document.getElementById("results").innerHTML = "You were born on a " + days[specificDay] + " and therefore, your Akan name is " + femaleNames[specificDay] + "!" 
+        document.getElementById("results").innerHTML = "Hey " + name + ",You were born on a " + days[specificDay] + ", your Akan name is " + femaleNames[specificDay] + "!" 
     }      
 
      
