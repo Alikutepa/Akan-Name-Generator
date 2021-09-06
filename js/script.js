@@ -41,5 +41,6 @@ function generate(){
 
 
 }
-function click(){
-document.getElementById("myForm").reset();}
+function myFunction() {
+    document.getElementById("myForm").reset();
+  }
