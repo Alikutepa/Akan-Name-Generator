@@ -37,7 +37,7 @@ label[for=gender]{
  padding: 20px;
  margin-left: 450px;
 }
-input[type=button], input[type=submit], input[type=reset] {
+input[type=button], input[type=submit] {
   background-color: #9aa39b;
   border: none;
   border-radius: 30px;
