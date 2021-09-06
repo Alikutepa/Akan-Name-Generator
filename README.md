@@ -9,7 +9,7 @@ The Akan people of Ghana name people depending on their gender and the specific 
 * Type git clone https://github.com/Alikutepa/Akan-Name-Generator
 * Press Enter to create your local clone
 ## Live link
-Go to [live]
+Go to [live]https://alikutepa.github.io/Akan-Name-Generator/
 ## Known Bugs
 None
 ## Technologies Used
