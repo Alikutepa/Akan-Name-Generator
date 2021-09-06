@@ -3,7 +3,7 @@ function generate(){
     var day=document.getElementById("day").value;
     var month=document.getElementById("month").value;
     var year=document.getElementById("year").value; 
-    var birthDay = new Date(year+ '/' +month + '/' + day);// to create a new date object with the current date
+    var birthDay = new Date(year+ '/' +month + '/' + day);// to create a new date object with current date
     var specificDay = birthDay.getDay(); // getDay returns the day of the week (from 0 to 6) for the specified date where Sunday is 0, Monday is 1
 
     var male=document.getElementById("male").checked; 
@@ -11,8 +11,8 @@ function generate(){
 
     // arrays for different variables 
     var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]; 
-    var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]; 
-    var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]; 
+    var maleAkanNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]; 
+    var femaleAkanNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]; 
 
 
 
@@ -30,11 +30,11 @@ function generate(){
  }
  // print out day defined in getDay and apply same syntax to the names array
     else if (male === true) { 
-        document.getElementById("results").innerHTML = "Hey " + name + ",You were born on a " + days[specificDay]  + ", your Akan name is " + maleNames[specificDay] + "!"
+        document.getElementById("results").innerHTML = "Hey " + name + ",You were born on a " + days[specificDay]  + ", your Akan name is " + maleAkanNames[specificDay] + "!"
     }
 
     else if (female === true) { 
-        document.getElementById("results").innerHTML = "Hey " + name + ",You were born on a " + days[specificDay] + ", your Akan name is " + femaleNames[specificDay] + "!" 
+        document.getElementById("results").innerHTML = "Hey " + name + ",You were born on a " + days[specificDay] + ", your Akan name is " + femaleAkanNames[specificDay] + "!" 
     }      
 
      
