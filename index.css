@@ -34,6 +34,18 @@ p{
   font-size: 30px;
 }
 label[for=gender]{
- padding: 15px;
- margin-left: 500px;
+ padding: 20px;
+ margin-left: 450px;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #9aa39b;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 450px;
+
 }
